@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'/>
+    <title>Educational Preferences and Skills Survey</title>
+    <link rel='stylesheet' href='styles.css'/>
+  </head>
+  <body class='body'>
+    <h1 id='title'>Educational Preferences and Skills</h1>
+    <p id='description'>We appreciate your input and value your opinions.</p>
+    <form id='survey-form'>
+      <fieldset>
+        <label id='name-label' for='name'>Name<input placeholder='Enter your name' type='text' id='name' pattern='^[A-Za-z\s\-']+$ 
+' required /></label>
+        <label id='email-label' for='email'>Email<input placeholder='ex:abc@email.com' type='email' pattern='^[\w\.-]+@[\w\.-]+\.\w+$' id='email' required /></label>
+        <label id='number-label' for='number'>Age (optional)<input type='number' pattern='^(1[89]|[2-9][0-9]|120)$' id='number' min='18' max='20' placeholder='Enter your Age' /></label>
+        <label for='dropdown'>What's your current title?
+          <select id='dropdown'>
+            <option disabled selected value>select your title</option>
+            <option>Student</option>
+            <option>Fresher</option>
+            <option>Full-time job</option>
+            <option>Full-time Learner</option>
+            <option>Other</option>
+            <option>Prefer not to say</option>
+          </select>
+        </label>
+        <p id='para'>Gender</p>
+        <label for='Male'> <input class='radio' value='Male' id='Male' type='radio' name='gender' checked/> Male</label>
+        <label for='Female'> <input class='radio' id='Female' value='Female' type='radio' name='gender'/> Female</label>
+        <label for='Other'> <input class='radio' type='radio' id='Other' Value='Other' name='gender'/> Other</label>
+        <p>Which course do you intend to select?</p>
+        <label for='web'>
+          <input id='web' type='checkbox' value='web' name='course'/> Web Development
+        </label>
+        <label for='ds'>
+          <input id='ds' type='checkbox' value='ds' name='course'/> Data Science
+        </label>
+        <label for='cs'>
+          <input id='cs' type='checkbox' value='cs' name='course'/> Cybersecurity
+        </label>
+        <label for='ai/ml'>
+          <input id='ai/ml' type='checkbox' value='ai/ml' name='course'/> AI/ML
+        </label>
+        <label for='fs'>
+          <input id='fs' type='checkbox' value='fs' name='course'/> Full-Stack Development
+        </label>
+        <label for='cc'>
+          <input id='cc' type='checkbox' value='cc' name='course'/> Cloud Computing
+        </label>
+        <label for='devops'>
+          <input id='devops' type='checkbox' value='devops' name='course'/> DevOps
+        </label>
+        <label for='ui/ux'>
+          <input id='ui/ux' type='checkbox' value='ui/ux' name='course'/> UI/UX Design
+        </label>
+        <label for="comments">Add Comments
+          <textarea id="comments" name="comments" rows="3" cols="30" placeholder="I like ___ ..."></textarea>
+        </label>
+      </fieldset>
+      <div class='submit'>
+       <input id='submit' type="submit" value="Submit" />
+    </form>
+  </body>
+
+</html>

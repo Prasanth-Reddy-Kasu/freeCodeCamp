@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{ background-image:linear-gradient(rgba(5, 60, 158, 0.8), rgb(136 206 187 / 70%) ), url('https://images.unsplash.com/photo-1548092372-0d1bd40894a3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+height:100%;
+background-size:cover;
+background-repeat:none;
+color:white;
+font-family:roboto;
+}
+label{
+  display:block;
+  margin: 0.5rem 0;
+}
+form{
+  max-width:500px;
+  min-width:300px;
+  width:60vw;
+  margin: 0 auto;
+}
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+  padding:5px;
+}
+#title,#description{
+  text-align:center;
+}
+fieldset{
+  border:none;
+}
+.radio {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+#para{
+  margin-bottom:0px;
+}
+input[type='radio']{
+  font-size:10px;
+}
+input[type='checkbox']{
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+input[type="submit"] {
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  width:auto;
+}
+.submit{
+  text-align:center;
+}
